@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kodchasan", sans-serif;
+}
+body {
+  font-family: "Kodchasan", sans-serif;
+  height:100vh;
+}
+h1 {
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
 .login-container {
   width: 100%;
   height: 100%;
@@ -6,12 +20,11 @@
   position: left;
   justify-content: space-around;
 }
-
 .login {
-  height: 600px;
+  position: relative;
   width: 100%;
+  height: 100vh;
   display: flex;
-  position: right;
   flex: 1;
   padding: 15px;
   border: 1px solid #ccc;
@@ -23,9 +36,6 @@
   background-position: center;
 }
 .overlay {
-  /* background: rgba(255, 255, 255, 0.2); /* 0.2 = leve clareamento */
-  background-color: red;
-  height: 600px;
   width: 100%;
   display: flex;
   position: right;
@@ -39,8 +49,8 @@
 }
 .boasvindas {
   width: 500px;
-  height: 600px;
   display: flex;
+  flex-direction: column;
   position: right;
   flex: 1;
   padding: 15px;
@@ -51,9 +61,13 @@
   background-position: center;
 }
 .form-style {
-  /* width: 90%;
-  height: 60%; */
+  width: 100%;
+  /* height: 60%; */
   /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .quadrado {
   /* background-color:#585D62; */
@@ -69,7 +83,78 @@
 }
 #btn1 {
   background-color: #81b4b8;
+  width: 30%;
 }
 #btn2 {
   background-color: #346263;
+}
+.cadastrar {
+  width: 60%;
+  display: inline-grid;
+}
+
+a {
+  width: 100%;
+  /* background-color: violet; */
+}
+.login::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.35); /* ajuste aqui: 0.2–0.4 */
+  pointer-events: none; /* pra não bloquear cliques */
+}
+
+/* tudo dentro da div acima da camada */
+.login > * {
+  position: relative;
+  z-index: 1;
+}
+
+input {
+  width: 100%;
+  height: 84px;
+  max-width: 486px;
+  border-radius: 30px;
+  padding: 25px;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.botao {
+  width: 100%;
+  max-width: 486px;
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  margin-top: 30px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#password {
+  margin-top: 20px;
+}
+button {
+  border-radius: 30px;
+  border: none;
+}
+.esqueci > a {
+  color: white;
+  text-decoration: none;
+  width: auto;
+}
+.esqueci {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+
 }

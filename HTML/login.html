@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../CSS/estilo.css" />
   </head>
   <body>
@@ -36,19 +42,30 @@
               class="form-style"
             >
               <div class="form-group">
-                <label for="username">Login</label>
-                <input type="text" id="username" name="username" required />
-              </div>
-              <div class="form-group">
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required />
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Login"
+                  required
+                />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Senha"
+                  required
+                />
               </div>
 
-              <button id="btn1" type="submit">Entrar</button>
-              <a href="../HTML/cadastrese.html">
-                <button id="btn2" type="button">Cadastre-se</button>
-              </a>
-              <p>
+              <div class="botao">
+                <button id="btn1" type="submit">Entrar</button>
+
+                <a class="cadastrar" href="../HTML/cadastrese.html">
+                  <button id="btn2" type="button">Cadastre-se</button>
+                </a>
+              </div>
+              <p class="esqueci">
                 <a href="../HTML/esqueciasenha.html"> Esqueci a senha</a>
               </p>
             </form>
