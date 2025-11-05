@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="../CSS/estilo.css" />
   </head>
   <body>
+    <nav>
+      <div class="logo">
+        <a href="../HTML/paginainicial.html">
+          <img
+            src="../IMAGENS/logo-removebg-preview.png"
+            alt="Logo SOS Celular"
+          />
+        </a>
+      </div>
+    </nav>
     <div class="login-container">
       <!-- Div do texto Boas vindas -->
       <div class="boasvindas">
@@ -27,10 +37,11 @@
           detalhes completos sobre cada serviço..
           <br />
           <br />
-          <strong
-            >Tudo para facilitar sua busca e garantir que você encontre o lugar
-            ideal para cuidar do seu celular!</strong
-          >
+          <strong>Tudo para facilitar sua busca e garantir que você encontre o lugar
+            ideal para cuidar do seu celular!</strong>
+          <footer>
+      <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
         </p>
       </div>
       <div class="overlay">
@@ -38,12 +49,13 @@
           <div class="quadrado">
             <form
               action="../HTML/paginainicial.html"
-              method="POST"
+              method="GET"
               class="form-style"
             >
               <div class="form-group">
+                <!-- type="email" -->
                 <input
-                  type="text"
+                type="text"
                   id="username"
                   name="username"
                   placeholder="Login"
@@ -73,8 +85,6 @@
         </div>
       </div>
     </div>
-    <footer>
-      <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
-    </footer>
+    
   </body>
 </html>

@@ -3,14 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kodchasan", sans-serif;
+  font-size: 1.1727rem;
 }
 body {
   font-family: "Kodchasan", sans-serif;
-  height:100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 h1 {
   font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 3.441rem;
 }
+nav {
+  background-color: #22262a;
+  height: 10%}
 
 .login-container {
   width: 100%;
@@ -22,12 +28,10 @@ h1 {
 }
 .login {
   position: relative;
-  width: 100%;
+  width: 50vw;
   height: 100vh;
   display: flex;
   flex: 1;
-  padding: 15px;
-  border: 1px solid #ccc;
   align-items: center;
   justify-content: center;
   background-image: url("../Imagens/imagemcelular.png");
@@ -40,25 +44,30 @@ h1 {
   display: flex;
   position: right;
   flex: 1;
-  padding: 15px;
-  border: 1px solid #ccc;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
 }
 .boasvindas {
-  width: 500px;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   position: right;
   flex: 1;
   padding: 15px;
   border: 1px solid #ccc;
+}
+.boasvindas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url("../Imagens/logodofundosemfundo.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 755px;
+  transform: translateX(-25%) rotate(11deg);
   background-position: center;
+  z-index: -1;
 }
 .form-style {
   width: 100%;
@@ -156,5 +165,4 @@ button {
   width: 100%;
   justify-content: center;
   margin-top: 15px;
-
 }
