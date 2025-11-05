@@ -1,22 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Kodchasan", sans-serif;
-  font-size: 1.1727rem;
-}
-body {
-  font-family: "Kodchasan", sans-serif;
-  height: 100vh;
-  overflow: hidden;
-}
-h1 {
-  font-family: "Kdam Thmor Pro", sans-serif;
-  font-size: 3.441rem;
-}
-nav {
-  background-color: #22262a;
-  height: 10%}
 
 .login-container {
   width: 100%;
@@ -102,10 +83,7 @@ nav {
   display: inline-grid;
 }
 
-a {
-  width: 100%;
-  /* background-color: violet; */
-}
+
 .login::before {
   content: "";
   position: absolute;
@@ -120,15 +98,6 @@ a {
   z-index: 1;
 }
 
-input {
-  width: 100%;
-  height: 84px;
-  max-width: 486px;
-  border-radius: 30px;
-  padding: 25px;
-  border: none;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-}
 
 .form-group {
   display: flex;
@@ -151,10 +120,7 @@ input {
 #password {
   margin-top: 20px;
 }
-button {
-  border-radius: 30px;
-  border: none;
-}
+
 .esqueci > a {
   color: white;
   text-decoration: none;
