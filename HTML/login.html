@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/estilo.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <!-- Div do texto Boas vindas -->
+      <div class="boasvindas">
+        <h1>Boas Vindas!</h1>
+        <p>
+          Se o seu celular quebrou e você precisa de uma solução rápida, você
+          está no lugar certo!
+          <br />
+          <br />
+          Aqui, você encontra assistências técnicas de celular próximas de você,
+          com informações atualizadas, avaliações reais de outros clientes e
+          detalhes completos sobre cada serviço..
+          <br />
+          <br />
+          <strong
+            >Tudo para facilitar sua busca e garantir que você encontre o lugar
+            ideal para cuidar do seu celular!</strong
+          >
+        </p>
+      </div>
+      <div class="overlay">
+        <div class="login">
+          <div class="quadrado">
+            <form
+              action="../HTML/paginainicial.html"
+              method="POST"
+              class="form-style"
+            >
+              <div class="form-group">
+                <label for="username">Login</label>
+                <input type="text" id="username" name="username" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+
+              <button id="btn1" type="submit">Entrar</button>
+              <a href="../HTML/cadastrese.html">
+                <button id="btn2" type="button">Cadastre-se</button>
+              </a>
+              <p>
+                <a href="../HTML/esqueciasenha.html"> Esqueci a senha</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
