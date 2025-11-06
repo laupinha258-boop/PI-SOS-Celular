@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kodchasan", sans-serif;
-  font-size: 1.1727rem;
+  font-size: 1.3rem; 
+  /* tamano da fonte escrita */
 }
 body {
   font-family: "Kodchasan", sans-serif;
@@ -39,3 +40,10 @@ button {
   border-radius: 30px;
   border: none;
 }
+
+.logo img {
+  width: 9vw;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+

@@ -81,6 +81,7 @@
 .cadastrar {
   width: 60%;
   display: inline-grid;
+  text-decoration: none;
 }
 
 
@@ -125,6 +126,7 @@
   color: white;
   text-decoration: none;
   width: auto;
+  padding-top: 20px;
 }
 .esqueci {
   display: flex;
@@ -132,3 +134,10 @@
   justify-content: center;
   margin-top: 15px;
 }
+
+h1 {padding-top: 111px
+}
+
+footer {padding-top: 250px;
+}
+
