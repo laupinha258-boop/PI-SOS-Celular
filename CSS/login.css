@@ -138,6 +138,9 @@
 h1 {padding-top: 111px
 }
 
-footer {padding-top: 250px;
+/* arrumar o rodapé */
+footer > p {display: flex;
+   align-items: flex-end;
+   align-content: flex-end;
 }
 
