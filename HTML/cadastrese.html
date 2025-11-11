@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">   
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastre-se</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="../CSS/global.css" />
-    <link rel="stylesheet" href="../CSS/cadastrese.css" /> 
-</head>
-<body>  
-  <nav>
+    <link rel="stylesheet" href="../CSS/cadastrese.css" />
+  </head>
+  <body>
+    <nav>
       <div class="logo">
         <a href="../HTML/paginainicial.html">
           <img
@@ -23,51 +23,49 @@
         </a>
       </div>
     </nav>
-    <div class="overlay">
-    <div class="login">
-        <div class="quadrado">
-    <div class="cadastrese">
-        <h1>Cadastre-se</h1>
-        <form 
-        action="/submit_registration" 
-        method="POST"
-        class="form-style">
-            <div class=" form group">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-            <br>
-            <label for="confirmar_senha">Confirmar Senha:</label>
-            <input type="password" id="confirmar_senha" name="confirmar_senha" required>
-            <br>
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco" required>
-            <br>
-            <label for="numero">Número:</label>
-            <input type="text" id="numero" name="numero" required>
-            <br>
-            <label for="bairro">Bairro:</label>
-            <input type="text" id="bairro" name="bairro" required>
-            <br>
-            </div>
-            </div>
+    <div class="login-container">
+      <div class="overlay">
+        <div class="login">
+           <h1>Cadastre-se</h1>
+          <div class="quadrado">
+ <form action="../HTML/paginainicial.html" method="POST" class="form-style">
+            <div class="form-group">
 
-        </form>
-                <label>
-                <input type="checkbox" name="termos" required>
-                Eu aceito os <a href="link-para-termos.html" target="_blank">Termos de Serviço</a>.
+              <input type="text" id="nome" name="nome" placeholder="Nome Completo:" required>
+              <br>
+              <input type="email" id="email" name="email" placeholder="Email:" required>
+              <br>
+              <input type="password" id="senha" name="senha" placeholder="Senha:" required>
+              <br>
+              <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirmar Senha:" required>
+              <br>
+              <input type="text" id="endereco" name="endereco" placeholder="Endereço:" required>
+              <br>
+              <input type="text" id="numero" name="numero" placeholder="Número:" required>
+              <br>
+              <input type="text" id="bairro" name="bairro"  placeholder="Bairro:" required>
+              <br>
+
+
+            <label>
+              <input type="checkbox" name="termos" required>
+              <span>
+              Eu aceito os <a href="link-para-termos.html" target="_blank">Termos de Serviço</a>
+            </span>
             </label>
-                <br>
-                <a href="../HTML/paginainicial.html">
-                <button type="submit" >Enviar</button>
-                </a>
-        </form>
+            <br>
+            <a href="../HTML/paginainicial.html">
+              <button type="submit">Enviar</button>
+            </a>
+            
+          </form>
+          </div>
         </div>
-        </div>
+      </div>
+         <div class="boasvindas">
         
+      </div>
+    </div>
+    
+  </body>
 </html>

@@ -1,16 +1,15 @@
 
+.login-container {
+  width: 100%;
+  height: 100%;
 
-.login::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.35); /* ajuste aqui: 0.2–0.4 */
-  pointer-events: none; /* pra não bloquear cliques */
+  display: flex;
+  position: left;
+  justify-content: space-around;
 }
-
 .login {
   position: relative;
-  width: 50vw;
+  width: 70vw;
   height: 100vh;
   display: flex;
   flex: 1;
@@ -20,8 +19,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  flex-direction: column;
 }
-
 .overlay {
   width: 100%;
   display: flex;
@@ -32,46 +31,146 @@
   background-size: cover;
   background-position: center;
 }
-
-.cadastrese {
-  width: 50vw;
+.boasvindas {
+  width: 30vw;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: right;
   flex: 1;
   padding: 15px;
   border: 1px solid #ccc;
 }
-
-.cadastrese::before { 
+.boasvindas::before {
   content: "";
-  position: relative;
-  display: flex;
+  position: absolute;
   inset: 0;
   background-image: url("../Imagens/logodofundosemfundo.png");
   background-repeat: no-repeat;
   background-size: 755px;
-  transform: translateX(-25%) rotate(11deg);
+  transform: translateX(30%) rotate(11deg);
   background-position: center;
   z-index: -1;
 }
-
-.label {
-    display: flex
-}
 .form-style {
   width: 100%;
-  /* height: 60%; */
-  /* background-color: blue; */
+  height: 100%;
+  /*background-color: blue;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.quadrado {
+  /* background-color:#585D62; */
+  background-color: rgba(88, 93, 98, 0.5); /* semi-transparente */
+  /* opacity: 0.5; */
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  /* padding: 20px; */
+}
+#btn1 {
+  background-color: #81b4b8;
+  width: 30%;
+}
+#btn2 {
+  background-color: #346263;
+}
+.cadastrar {
+  width: 60%;
+  display: inline-grid;
+  text-decoration: none;
+}
+
+
+.login::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.35); /* ajuste aqui: 0.2–0.4 */
+  pointer-events: none; /* pra não bloquear cliques */
+}
+
+/* tudo dentro da div acima da camada */
+.login > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 .form-group {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
+  align-items: center; 
+   height: 100%;
+   /*background-color: tomato;*/
+
+}
+
+.botao {
+  width: 100%;
+  max-width: 486px;
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  margin-top: 30px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#password {
+  margin-top: 20px;
+}
+
+.esqueci > a {
+  color: white;
+  text-decoration: none;
+  width: auto;
+  padding-top: 20px;
+}
+.esqueci {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+h1 {padding-top: 111px
+}
+
+/* arrumar o rodapé */
+footer > p {display: flex;
+   align-items: flex-end;
+   align-content: flex-end;
+}
+
+body {overflow: hidden;
+ height: 100vh;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  max-width: 486px;
+  border-radius: 30px;
+  padding: 25px;
+  border: none;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 1rem; 
+}
+
+label {display:flex;
+  align-items:center;
+
+}
+
+button {
+  background-color: #346263;
+  color: white;
+  width: 280px;
+  height: 58px;
 }
