@@ -144,3 +144,6 @@ footer > p {display: flex;
    align-content: flex-end;
 }
 
+body {overflow: hidden;
+ height: 100vh;
+}

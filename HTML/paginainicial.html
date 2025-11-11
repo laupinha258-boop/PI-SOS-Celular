@@ -4,59 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="styles.css">
+     <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/paginainicial.css" /> 
 </head>
 <body>
     
     <nav>
-        <a href="../HTML/paginainicial.html">Início</a> | 
-        <a href="../HTML/quemsomos.html">Quem Somos</a> | 
-        <a href="../HTML/cadastrodaempresa.html">Empresa</a> | 
-        <a href="../HTML/perfil.html">Perfil</a>
+      <div class="logo">
+        <a href="../HTML/paginainicial.html">
+          <img
+            src="../IMAGENS/Logo SOS CELULARCerta.png"
+            alt="Logo SOS Celular"
+          />
+        </a>
+      </div>
     </nav>
+    
+    <div class="cabecalho">
+      <ul> <a href="../HTML/paginainicial.html">Início</a></ul>
+      <ul> <a href="../HTML/quemsomos.html">Quem Somos</a></ul>
+      <ul> <a href="../HTML/cadastrodaempresa.html">Empresa</a></ul> 
+      <ul> <a href="../HTML/perfil.html">Perfil</a></ul>
+    </div>
    
        <form action="/submit_registration" method="POST">
-            <label for="localizacao">Localização</label>
+            <label for="localizacao">Qual a sua localização?</label>
             <input type="text" id="localizacao" name="localizacao" required>
       
             <button type="submit">Buscar</button>
             <br>
             <br>
-        (mapa)
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.1651168361527!2d-46.70383862385003!3d-23.670052478725164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5036539648d5%3A0x78501a72680ea23a!2sCentro%20Universit%C3%A1rio%20Senac%20-%20Santo%20Amaro!5e0!3m2!1spt-BR!2sbr!4v1762861662915!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </form>     
  
    <h1>Serviços</h1>
 
    <div class="servicos">
-    <div class="fatalcell">
+    <div class="fatalcell"><a href="../HTML/fatalcell.html">
    <h3> Fatal Cell Santo Amaro</h3>
    Rua Tenente-Coronel Carlos da Silva Araújo, 92 - Santo Amaro, São Paulo - SP, 04751-050
    <br>
    <div class="estrela">
    (estrela) 4.3
+  
    </div>
     </div>
+    </a>
 
-    <div class="floriano">
+    <div class="floriano"><a href="../HTML/floriano.html">
    <h3>Floriano Assistência Técnica e Serviços</h3>
    Rua Tenente-Coronel Carlos da Silva Araújo, 12B - Santo Amaro, São Paulo - SP,
 04751-050
-<br>
-<div class="estrela">
-(estrela) 5.0
-</div>
+    <br>
+    <div class="estrela">
+    (estrela) 5.0
     </div>
+    </div>
+    </a>
 
-<div class="mynewphone">
+<div class="mynewphone"><a href="../HTML/mynewphone.html">
    <h3>My New Phone - Assistência Técnica Especializada</h3>
  Rua Barão de Duprat, 250 - Loja 65, Santo Amaro, São Paulo - SP
-<br>
-<div class="estrela">
-(estrela) 4.9
-</div>
+    <br>
+    <div class="estrela">
+    (estrela) 4.9
     </div>
+    </div>
+    </a>
 
-<div class="iking">
+<div class="iking"><a href="../HTML/iking.html">
    <h3>iKing Phone Assistência Técnica</h3>
  Rua Amador Bueno, 625 - Santo Amaro, São Paulo - SP
 <br>
@@ -64,8 +83,9 @@
 (estrela) 4.7
 </div>
     </div>
+    </a>
 
-<div class="mastertudo">
+<div class="mastertudo"><a href="../HTML/mastertudo.html">
    <h3>Master Tudo - Assistência Técnica de Celular</h3>
  Rua. Borba Gato, 59 - Santo Amaro, São Paulo - SP, 04747-030
 <br>
@@ -73,14 +93,9 @@
 (estrela) 4.7
 </div>
     </div>
+    </a>
 
    </div>
-
-
-
-  
-    
-            
 
 
 </body>

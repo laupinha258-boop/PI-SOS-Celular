@@ -1,0 +1,68 @@
+
+
+body {
+    background-color: 251, 250, 251;
+}
+
+.cabecalho {
+    background-color:rgba(176, 181, 182, 1);
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 300px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+ /* tirar o efeito de link das palavras
+ margem de 61px da borda da tela */
+a { color: rgb(0, 0, 0);
+    text-decoration: none; 
+    padding-left: 61px;  
+    
+}
+
+h1 {color: #000;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex; 
+    
+}
+
+body {  overflow: scroll;
+}
+
+
+h3 {font-family: "Kdam Thmor Pro", sans-serif;
+
+}
+
+.fatalcell {
+    background-color: rgba(52, 98, 99, 1);
+    border-radius: 33px;
+    display: flex; 
+}
+
+.floriano {
+    background-color: rgba(52, 98, 99, 1);
+    border-radius: 33px;
+    display: flex; 
+}
+
+.mynewphone {
+    background-color: rgba(52, 98, 99, 1);
+    border-radius: 33px;
+    display: flex; 
+}
+
+.iking {
+    background-color: rgba(52, 98, 99, 1);
+    border-radius: 33px;
+    display: flex; 
+}
+
+.mastertudo {
+    background-color: rgba(52, 98, 99, 1);
+    border-radius: 33px;
+    display: flex; 
+}
+
+

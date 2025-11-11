@@ -8,8 +8,7 @@
 }
 body {
   font-family: "Kodchasan", sans-serif;
-  height: 100vh;
-  overflow: hidden;
+ 
 }
 
 h1 {
@@ -23,8 +22,9 @@ nav {
 
 a {
   width: 100%;
-  /* background-color: violet; */
 }
+  /* background-color: violet; */
+
 
 input {
   width: 100%;
@@ -45,5 +45,9 @@ button {
   width: 9vw;
   padding-left: 10px;
   padding-top: 10px;
+}
+
+.body {overflow: hidden;
+ height: 100vh;
 }
 
