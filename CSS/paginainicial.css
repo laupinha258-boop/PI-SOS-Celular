@@ -24,11 +24,14 @@ a { color: rgb(255, 255, 255);
     
 }
 
+
+
 .caixacinza {
     background-color:#d9d9d9;
     margin: 25px;
     border-radius: 74px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 64px;
 }
 
 a:hover {
@@ -120,4 +123,26 @@ ul a {color: #000;
     font-size: 36px;
     color:#81b4b8;
     display: flex;
+}
+
+button {
+    background-color: #346263;
+    color: white;
+    width: 273px;
+    height: 89px;
+}
+
+iframe {
+    width: 93vw;
+    height: 379px;
+    margin-left: 37px;
+    border-radius: 15px;
+}
+
+input {
+    height: 89px;
+    width: 82vw;
+    margin-top: 48px;
+    margin-left: 37px;
+
 }

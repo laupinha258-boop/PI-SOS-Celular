@@ -22,10 +22,15 @@ text-decoration: none;
     color: inherit;
     color: rgb(14, 13, 13);
     text-decoration: none; 
-    padding-left: 61px;  
-        
-    
+    padding-left: 61px;
+    margin-left: 18px;  
+    margin-top: 14px;
 }
+
+a:hover {
+    color:white;
+}
+
 
 .quadradofundo {
 
@@ -46,7 +51,7 @@ text-decoration: none;
 }
 
 h3 {
-  color:  #EBEFEE;
+    color:  #EBEFEE;
 }
 
 
@@ -133,12 +138,12 @@ h3 {
     justify-content: center;
     flex-direction: column;
 
- }
+}
 
- .estrela {
+.estrela {
     width: 109px;
     height:19px;
- }
+}
 
 .estrelageral {
     width:255px;

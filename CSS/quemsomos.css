@@ -11,6 +11,12 @@
 a {
 text-decoration: none;
     color: inherit;
+    margin-left: 18px;  
+    margin-top: 14px;
+}
+
+a:hover {
+    color:white;
 }
 
 .container {
@@ -25,8 +31,41 @@ margin-left: 38px
     margin-left: 38px
 }
 
-.fale {
-    margin-left: 38px
+.nome {
+    margin-left: 38px;
+    background-color:  #81B4B8;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px ;
+    padding-left: 10px;
+    margin-bottom: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 600px;
+}
+
+.email {
+    margin-left: 38px;
+    background-color:  #81B4B8;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px ;
+    padding-left: 10px;
+    margin-bottom: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 600px;
+    
+}
+.mensagem {
+    margin-left: 38px;
+    background-color:  #81B4B8;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px ;
+    padding-left: 10px;
+    margin-bottom: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 600px;
+    
 }
 
 button {
@@ -35,18 +74,13 @@ button {
   width: 280px;
   height: 58px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  margin-left: 38px;
+
 }
 
 button:hover {
     color:#346263;
     background:#81B4B8;
-}
-
-.mensagem {
-
-background:(#81B4B8);
-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-
 }
 
 input#mensagem {

@@ -13,13 +13,24 @@
     <link rel="stylesheet" href="../CSS/quemsomos.css" />
 </head>
 <body>
-    
-    <nav>
-        <a href="../HTML/paginainicial.html">Início</a> 
+
+        <nav>
+      <div class="logo">
+        <a href="../HTML/paginainicial.html">
+          <img
+            src="../IMAGENS/Logo SOS CELULARCerta.png"
+            alt="Logo SOS Celular"
+          />
+        </a>
+      </div>
+    </nav>
+    <div class="cabecalho">
+      <ul><a href="../HTML/paginainicial.html">Início</a></ul>
         <a href="../HTML/quemsomos.html">Quem Somos</a> 
         <a href="../HTML/cadastrodaempresa.html">Empresa</a> 
         <a href="../HTML/perfil.html">Perfil</a>
-    </nav>
+    </div>
+    
     <div class="container">
         <h1>Quem Somos</h1>
         <p>Somos uma plataforma criada para facilitar a vida de quem precisa consertar o celular com rapidez e segurança. Reunimos em um só lugar diversas assistências técnicas, com informações atualizadas, avaliações reais de clientes e detalhes sobre os serviços oferecidos.
@@ -40,18 +51,25 @@
     </div>
 <div class="fale">
     <div class="nome">
-        <label for="username">Nome</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" 
+            id="username" 
+            name="username" required
+            placeholder="Nome:">
     </div>
+</div>
 
     <div class="email">
-        <label for="username">E-mail</label>
-            <input type="text" id="email" name="email" required>
+            <input type="text" 
+            id="email" 
+            name="email" required
+            placeholder="E-mail:">
     </div>
 
     <div class="mensagem">
-        <label for="username">Mensagem</label>
-            <input type="text" id="mensagem" name="mensagem" required>
+            <input type="text" 
+            id="mensagem" 
+            name="mensagem" required
+            placeholder="Escreva sua mensagem aqui:">
     </div>
 
     <div class="enviar">
