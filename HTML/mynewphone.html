@@ -28,3 +28,107 @@
         <a href="../HTML/cadastrodaempresa.html">Empresa</a> 
         <a href="../HTML/perfil.html">Perfil</a>
     </div>
+
+    <div class="quadradofundo">
+      <h3>
+        My New Phone - Assistência Técnica Especializada
+      </h3>
+        <div class="estrelas">
+          <img class= "estrelageral" src="../IMAGENS/estrelas1.png"> 4.9
+      </div>
+
+      <div class="informacoes">
+      <p>
+        <strong>Endereço:</strong>
+        Rua Barão de Duprat, 250 - Loja 65, S
+        anto Amaro, São Paulo - SP<br> 
+        <br>
+        <strong>Contato:</strong> 11 94521-5765<br>
+        <br>
+        <strong>Horário de Funcionamento:</strong><br>
+        09:00 as 18:00
+      </p>
+    </div>
+    <br>
+
+  <div class="comment-box">
+    <h3>Deixe sua avaliação:</h3>
+    
+    <textarea id="commentText" placeholder="Digite seu comentário..."></textarea>
+   <br>
+   <br>
+   <div class="estrelas">
+    (estrelas)
+    </div>
+    <br>
+  <button class="btn1" onclick="addComment()">Enviar</button>
+
+  
+
+    <div id="comments"></div>
+</div>
+
+<script>
+function addComment() {
+    const text = document.getElementById("commentText").value;
+
+    if (text.trim() === "") return;
+
+    const comment = document.createElement("p");
+    comment.textContent = text;
+
+    document.getElementById("comments").appendChild(comment);
+
+    document.getElementById("commentText").value = "";
+}
+</script>
+<br>
+<div class="avaliacoes">
+<h3>Avaliações</h3>
+
+  <div class="avaliacao1">
+    <h7>
+    Lucia
+    </h7><br>
+    <img class="estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Foi a única assistência técnica que remove os vírus e anúncios sem 
+    apagar nada, é ainda oferecem garantia do serviço. Só tenho a 
+    agradecer pelo belo serviço dessa empresa.
+    </p>
+    </div>
+
+    <div class="avaliacao2">
+    <h7>
+    Julio
+    </h7><br>
+    <img class="estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Melhor que muitas assistência grandes.. super rápido e ágil! 
+   Pode deixar seu aparelho sem medo, pois a empresa é super 
+    explicativa e deixa agente ciente de todos os detalhes.
+    </p>
+    </div>
+
+     <div class="avaliacao3">
+    <h7>
+    Cesar
+    </h7><br>
+    <img class="estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Serviços rápidos, assistência técnica Apple muito bem 
+    comentada no meu grupo do condomínio, retornarei se 
+    precisar, gratidão a toda equipe! Meu iPhone ficou excelente!
+    </p>
+    </div>
+    <br>
+
+    <button class="btn2">Ver todas as avaliações</button>
+
+  </div>
+</div>
+
+<footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>

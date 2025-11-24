@@ -28,3 +28,99 @@
         <a href="../HTML/cadastrodaempresa.html">Empresa</a> 
         <a href="../HTML/perfil.html">Perfil</a>
     </div>
+
+    <div class="quadradofundo">
+      <h3>
+        iKing Phone Assistência Técnica
+      </h3>
+        <div class="estrelas">
+          <img class= "estrelageral" src="../IMAGENS/estrelas7.png"> 4.7
+      </div>
+
+      <div class="informacoes">
+      <p>
+        <strong>Endereço:</strong>
+        Rua Amador Bueno, 625 - Santo Amaro, São Paulo - SP<br> 
+        <br>
+        <strong>Contato:</strong> 11 99332-7645<br>
+        <br>
+        <strong>Horário de Funcionamento:</strong><br>
+        10:00 às 17:00
+      </p>
+    </div>
+
+  <div class="comment-box">
+    <h3>Deixe sua avaliação:</h3>
+    
+    <textarea id="commentText" placeholder="Digite seu comentário..."></textarea>
+   <br>
+   <br>
+   <div class="estrelas">
+    (estrelas)
+    </div>
+    <br>
+  <button class="btn1" onclick="addComment()">Enviar</button>
+  
+
+    <div id="comments"></div>
+</div>
+
+<script>
+function addComment() {
+    const text = document.getElementById("commentText").value;
+
+    if (text.trim() === "") return;
+
+    const comment = document.createElement("p");
+    comment.textContent = text;
+
+    document.getElementById("comments").appendChild(comment);
+
+    document.getElementById("commentText").value = "";
+}
+</script>
+<br>
+<div class="avaliacoes">
+<h3>Avaliações</h3>
+
+  <div class="avaliacao1">
+    <h7>
+    Leandro
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Excelente atendimento. Consertou meu tablet que nem a 
+    Samsung quis consertar. Serviço impecável, super recomendo!
+    </p>
+    </div>
+
+    <div class="avaliacao2">
+    <h7>
+    Sheila
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Endosso todas as opiniões positivas sobre a loja! Excelente atendimento!
+    </p>
+    </div>
+
+     <div class="avaliacao3">
+    <h7>
+    Renan
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Muito bom. Serviço honesto e competente.
+    </p>
+    </div>
+    <br>
+
+    <button class="btn2">Ver todas as avaliações</button>
+
+  </div>
+</div>
+
+<footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>

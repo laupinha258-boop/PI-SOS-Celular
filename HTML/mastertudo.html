@@ -28,3 +28,107 @@
         <a href="../HTML/cadastrodaempresa.html">Empresa</a> 
         <a href="../HTML/perfil.html">Perfil</a>
     </div>
+
+    <div class="quadradofundo">
+      
+      <h3>
+        Master Tudo - Assistência Técnica de Celular
+        </h3>
+        <div class="estrelas">
+        <img class= "estrelageral" src="../IMAGENS/estrelas7.png"> 4.7
+        </div>
+        <div class="informacoes">
+      <p>
+        <strong>Endereço:</strong>
+        Rua. Borba Gato, 59 - Santo Amaro, São Paulo - SP, 04747-030<br> 
+        <br>
+        <strong>Contato:</strong> 11 989947316<br>
+        <br>
+        <strong>Horário de Funcionamento:</strong><br>
+        09:00 as 22:00
+      </p>
+        </div>
+      <br>
+
+  <div class="comment-box">
+    <h3>Deixe sua avaliação:</h3>
+    
+    <textarea id="commentText" placeholder="Digite seu comentário..."></textarea>
+   <br>
+   <br>
+   <div class="estrelas">
+    (estrelas)
+    </div>
+    <br>
+  <button class="btn1" onclick="addComment()">Enviar</button>
+  <br>
+  
+
+    <div id="comments"></div>
+</div>
+
+<script>
+function addComment() {
+    const text = document.getElementById("commentText").value;
+
+    if (text.trim() === "") return;
+
+    const comment = document.createElement("p");
+    comment.textContent = text;
+
+    document.getElementById("comments").appendChild(comment);
+
+    document.getElementById("commentText").value = "";
+}
+</script>
+<br>
+<div class="avaliacoes">
+<h3>Avaliações</h3>
+
+  <div class="avaliacao1">
+    <h7>
+    Tamara
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Ótima experiência, troquei a tela do meu iPhone e parece novo!!! 
+    O atendimento também ótimo, super bem recepcionada, indico muitooooo!!! 
+    Com toda certeza 5 estrelas
+    </p>
+    </div>
+
+    <div class="avaliacao2">
+    <h7>
+    Thiago
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Empresa muito boa assistência técnica de primeira tem de 
+    tudo que precisa no dia a dia
+    </p>
+    </div>
+
+     <div class="avaliacao3">
+    <h7>
+    Maiara
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Atendimento excelente! Super atenciosos, preço justo! 
+    Variedade de coisinhas para presentar, super indico!!! 
+    Ainda fizeram o pacote de outro presente de outra loja para mim!!!
+    </p>
+    </div>
+    <br>
+
+    <button class="btn2">Ver todas as avaliações</button>
+
+  </div>
+</div>
+</div>
+
+<footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body> 
+    

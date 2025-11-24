@@ -28,3 +28,104 @@
         <a href="../HTML/cadastrodaempresa.html">Empresa</a> 
         <a href="../HTML/perfil.html">Perfil</a>
     </div>
+
+    <div class="quadradofundo">
+      <h3>
+        Fatal Cell Santo Amaro
+      </h3>
+      <div class="estrelas">
+        <img class= "estrelageral" src="../IMAGENS/estrelas7.png"> 4.3
+      </div>
+
+      <div class="informacoes">
+      <p>
+        <strong>Endereço:</strong>
+        Rua Tenente-Coronel Carlos da Silva Araújo, 92 -
+        Santo Amaro, São Paulo - SP,
+        04751-050<br> 
+        <br>
+        <strong>Contato:</strong> 11 976986555<br>
+        <br>
+        <strong>Horário de Funcionamento:</strong><br>
+        9:00 as 19:00
+      </p>
+      <br>
+      </div>
+  
+
+  <div class="comment-box">
+    <h3>Deixe sua avaliação:</h3>
+    
+    <textarea id="commentText" placeholder="Digite seu comentário..."></textarea>
+   <br>
+   <br>
+   <div class="estrelas">
+    (estrelas)
+    </div>
+    <br>
+  <button class="btn1" onclick="addComment()">Enviar</button>
+
+ 
+    <div id="comments"></div>
+</div>
+
+<script>
+function addComment() {
+    const text = document.getElementById("commentText").value;
+
+    if (text.trim() === "") return;
+
+    const comment = document.createElement("p");
+    comment.textContent = text;
+
+    document.getElementById("comments").appendChild(comment);
+
+    document.getElementById("commentText").value = "";
+}
+</script>
+<br>
+<div class="avaliacoes">
+<h3>Avaliações</h3>
+
+  <div class="avaliacao1">
+    <h7>
+    Maria
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas2.png">
+    <p>
+    Atendimento ótimo! Conserto de varias marcas de telefones 
+    celulares a preços excelentes.
+    </p>
+    </div>
+
+    <div class="avaliacao2">
+    <h7>
+    João Paulo
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas4.png">
+    <p>
+    Já consertei vários celulares, sem nenhum problema até o momento.
+    </p>
+    </div>
+
+     <div class="avaliacao3">
+    <h7>
+    Lucas
+    </h7><br>
+    <img class= "estrela" src="../IMAGENS/estrelas5.png">
+    <p>
+    Variedade razoável. Atende às expectativas.
+    </p>
+    </div>
+    <br>
+    
+    <button class="btn2">Ver todas as avaliações</button>
+  
+
+  </div>
+</div>
+
+<footer>
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>

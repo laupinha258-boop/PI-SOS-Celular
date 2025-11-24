@@ -13,17 +13,32 @@ body {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
 }
+
+
  /* tirar o efeito de link das palavras
  margem de 61px da borda da tela */
-a { color: rgb(0, 0, 0);
+a { color: rgb(255, 255, 255);
     text-decoration: none; 
-    padding-left: 61px;  
+    margin-left: 18px;  
+    margin-top: 14px;
     
+}
+
+.caixacinza {
+    background-color:#d9d9d9;
+    margin: 25px;
+    border-radius: 74px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a:hover {
+    color:white;
 }
 
 h1 {color: #000;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     display: flex; 
+    margin-left: 25px;
     
 }
 
@@ -32,6 +47,7 @@ body {  overflow: scroll;
 
 
 h3 {font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 36px;
 
 }
 
@@ -39,30 +55,69 @@ h3 {font-family: "Kdam Thmor Pro", sans-serif;
     background-color: rgba(52, 98, 99, 1);
     border-radius: 33px;
     display: flex; 
+    height: 212px;
+    flex-shrink: 0;
+    margin-left: 25px;
+    margin-right: 69px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .floriano {
     background-color: rgba(52, 98, 99, 1);
     border-radius: 33px;
     display: flex; 
+    height: 212px;
+    flex-shrink: 0;
+    margin-left: 25px;
+    margin-right: 69px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mynewphone {
     background-color: rgba(52, 98, 99, 1);
     border-radius: 33px;
     display: flex; 
+    height: 212px;
+    flex-shrink: 0;
+    margin-left: 25px;
+    margin-right: 69px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .iking {
     background-color: rgba(52, 98, 99, 1);
     border-radius: 33px;
     display: flex; 
+    height: 212px;
+    flex-shrink: 0; 
+    margin-left: 25px;
+    margin-right: 69px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mastertudo {
     background-color: rgba(52, 98, 99, 1);
     border-radius: 33px;
     display: flex; 
+    height: 212px;
+    flex-shrink: 0;
+    margin-left: 25px;
+    margin-right: 69px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+ul a {color: #000;
 
+}
+
+.estrelageral {
+    width:45px;
+    height:45px;
+    margin-right: 6px;
+}
+
+.estrela {
+    font-size: 36px;
+    color:#81b4b8;
+    display: flex;
+}
