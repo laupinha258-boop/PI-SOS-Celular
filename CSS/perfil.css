@@ -18,3 +18,111 @@ text-decoration: none;
 a:hover {
     color:white;
 }
+
+.quadradofundo {
+    background-color: rgba(217, 217, 217, 1);
+    margin-top: 42px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 42px;
+    padding-left: 20px;
+    
+}
+
+.biografia {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.foto {
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
+}
+
+.semititulos { 
+    display: flex;
+    justify-content: space-between;
+    
+}
+.semititulo1 {
+    font-size: 50px;
+    
+}
+
+.semititulo2 {
+    font-size: 50px;
+    padding-right: 610px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fatal {
+    background-color: white;
+    border-radius: 20px;
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
+.floriano {
+    background-color: white;
+    border-radius: 20px;
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
+.mynewphone {
+    background-color: white; 
+    height: flex;
+    border-radius: 20px;
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
+.florianofav {
+    background-color: rgba(52, 98, 99, 1);
+    color: white;
+    height: flex;
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+
+}
+.btn {
+    background-color: rgba(129, 180, 184, 1);
+    width: 160px;
+    height: 60px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background-color: rgba(52, 98, 99, 1);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.estrelageral {
+    width: 210px;
+    height: 40px;
+    margin-right: 6px;
+}
+
+.biografia {
+    display: flex;
+    justify-content: flex-start;
+}
