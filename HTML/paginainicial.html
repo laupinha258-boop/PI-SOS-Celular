@@ -105,6 +105,99 @@
 
    </div>
 
+   <script>
+    (function(){
+      const btn = document.getElementById('likeBtn');
+      const countEl = document.getElementById('likeCount');
+
+      // valor inicial — em app real, viria do servidor
+      let count = parseInt(countEl.textContent.replace(/\D/g,''), 10) || 0;
+      let liked = false;
+
+      // função que atualiza o contador e aria
+      function updateUI(){
+        countEl.textContent = count.toLocaleString('pt-BR');
+        btn.setAttribute('aria-pressed', String(liked));
+        if(liked){
+          btn.classList.add('liked');
+          btn.setAttribute('aria-label','Descurtir');
+          btn.title = 'Descurtir (Enter/Space)';
+        } else {
+          btn.classList.remove('liked');
+          btn.setAttribute('aria-label','Curtir');
+          btn.title = 'Curtir (Enter/Space)';
+        }
+      }
+
+      // cria partículas coloridas ao curtir
+      function spawnParticles(x, y){
+        const colors = ['#ff7aa2','#ffc3c3','#ffd2a6','#ff9fb1','#ffd6e0','#ffe066'];
+        const parent = btn; // posicionar relativo ao botão
+        const rect = parent.getBoundingClientRect();
+        const cx = x ?? rect.left + rect.width/2;
+        const cy = y ?? rect.top + rect.height/2;
+
+        for(let i=0;i<8;i++){
+          const p = document.createElement('div');
+          p.className = 'particle';
+          p.style.left = (cx - rect.left) + 'px';
+          p.style.top = (cy - rect.top) + 'px';
+          p.style.background = colors[Math.floor(Math.random()*colors.length)];
+          p.style.width = p.style.height = (6 + Math.random()*10) + 'px';
+          // random rotation / delay
+          p.style.animationDelay = (Math.random()*0.05) + 's';
+          p.style.transform = `translate(-50%,-50%) rotate(${Math.random()*360}deg)`;
+          parent.appendChild(p);
+
+          // remove after animation
+          p.addEventListener('animationend', ()=> p.remove());
+        }
+      }
+
+      // anima 'pop' no coração
+      function doPop(){
+        const heart = btn.querySelector('.heart');
+        heart.classList.remove('pop');
+        // reflow para reiniciar animação
+        void heart.offsetWidth;
+        heart.classList.add('pop');
+      }
+
+      // evento de clique
+      btn.addEventListener('click', (e)=>{
+        liked = !liked;
+        count += liked ? 1 : -1;
+        if(count < 0) count = 0;
+        updateUI();
+        doPop();
+        if(liked) spawnParticles();
+      });
+
+      // suporte teclado (Enter/Space)
+      btn.addEventListener('keydown', (e)=>{
+        if(e.key === ' ' || e.key === 'Enter'){
+          e.preventDefault();
+          btn.click();
+        }
+      });
+
+      // suporte duplo-clique na área (ex.: curtir ao dar duplo clique)
+      document.querySelector('.like-card').addEventListener('dblclick', (e)=>{
+        if(!liked){
+          liked = true;
+          count++;
+          updateUI();
+          doPop();
+          // coords relativas ao botão para efeito de particula mais natural
+          const btnRect = btn.getBoundingClientRect();
+          spawnParticles(btnRect.left + btnRect.width/2, btnRect.top + btnRect.height/2);
+        }
+      });
+
+      // inicializa UI
+      updateUI();
+    })();
+  </script>
 
 </body>
 <footer>

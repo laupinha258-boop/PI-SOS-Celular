@@ -111,6 +111,12 @@ h3 {
     font-size: 36px;
 }
 
+.alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*ta reconhecendo a display no texto, não no botão*/
 .btn1 {
     background-color: #81B4B8;
@@ -149,3 +155,101 @@ h3 {
     width:255px;
     height: 45px;
 }
+
+.divisoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* heart*/
+:root{
+      --size: 56px;
+      --heart-color: #e0245e;
+      --muted: #bbb;
+      --bg: #fff;
+      --shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+/* Botão do coração */
+    .like-btn{
+      --s: var(--size);
+      width:var(--s);
+      height:var(--s);
+      border-radius:12px;
+      border: none;
+      display:inline-grid;
+      place-items:center;
+      cursor:pointer;
+      transition:transform .12s ease, box-shadow .12s ease;
+      outline: none;
+      position:relative;
+      box-shadow: 0 2px 6px rgba(0,0,0,.06);
+      padding:0;
+    }
+    .like-btn:active{ transform: scale(.98); }
+
+ .heart{
+      width:38px;
+      height:38px;
+      display:block;
+      transform-origin:center;
+      
+      fill: none;
+      stroke: var(--muted);
+      stroke-width: 2;
+      filter: drop-shadow(0 1px 0 rgba(0,0,0,.03));
+ }
+.like-btn.liked .heart{
+      fill: var(--heart-color);
+      stroke: var(--heart-color);
+      transform: scale(1.08);
+}
+
+ /* "pop" animation class - trigger via JS */
+
+    @keyframes pop{
+      0% { transform: scale(.9); }
+      40% { transform: scale(1.35); }
+      70% { transform: scale(.95); }
+      100% { transform: scale(1); }
+}
+ .count{
+      font-size:18px;
+      color:#346263;
+      font-weight:6;
+      user-select:none;
+    }
+    .sub{
+      display:block;
+      font-size:12px;
+      color:#346263;
+      margin-top:4px;
+      font-weight:500;
+    }
+
+    /* Estrelas avaliações */
+
+    .stars{
+    display:flex;
+    gap:5px;
+    cursor:pointer;
+    user-select:none;
+  }
+
+  .star{
+    color:#ccc;
+    transition: color .2s, transform .2s;
+    font-size: 80px;
+  }
+
+  .star.hover,
+  .star.selected {
+    color: #81B4B8;
+    transform:scale(1.15);
+  }
+
+  #output{
+    font-weight:bold;
+    color:#333;
+  }
