@@ -179,3 +179,8 @@ button {
   width: 280px;
   height: 58px;
 }
+
+button:hover {
+    color:#346263;
+    background:#81B4B8;
+}

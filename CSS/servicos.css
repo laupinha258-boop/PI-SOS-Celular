@@ -115,6 +115,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 /*ta reconhecendo a display no texto, não no botão*/

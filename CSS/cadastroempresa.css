@@ -17,15 +17,21 @@ a:hover {
 
 .cadastro {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 95%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
     height: 870.676px;
     background-color: rgba(88, 93, 98, 1);
     border-radius: 41px;
-    padding-top: 73px;
-    padding-left: 62px;
-    margin-left: 40px;
+}
+
+.divisao {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 40%;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 button {
@@ -34,7 +40,7 @@ button {
   width: 280px;
   height: 58px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  margin-bottom: 90px;
+  /* margin-top: 90px; */
 }
 
 button:hover { 
@@ -42,11 +48,11 @@ button:hover {
     color: white;
 }
 
+input {
+    width: 100%;
+    max-width: unset;
+}
 
-
-/*
-#346263;
-
-#203d3d;
-
-#81B4B8; */
+.conteudo {
+    margin: 25px;
+}
